@@ -1,22 +1,33 @@
-# ArenaPulse — Sample Sports Landing Page
+# ArenaPulse — Live Sports Landing Page
 
-A modern, responsive sports landing page built with pure HTML + Tailwind CSS.
+Modern sports landing page with **real-time live scores** powered by ESPN's public API.
 
 ## Features
-- Dark theme with green accent
-- Live match score cards
-- Sports categories grid
-- Feature highlights
+- Live scores from ESPN (NBA, EPL, NFL, NHL)
+- Bangladesh Time (Asia/Dhaka) for all match times
+- Auto-refresh every 60 seconds
+- Filter by sport
+- Today's schedule view
 - Fully responsive
-- Smooth hover effects
-
-## Live Preview
-Open `index.html` in any browser, or enable GitHub Pages.
+- No API key required
 
 ## Tech
-- HTML5
-- Tailwind CSS (CDN)
-- Google Fonts (Inter)
+- HTML + Tailwind CSS (CDN)
+- ESPN Public Scoreboard API (`site.api.espn.com`)
+- Vanilla JavaScript
+
+## Live Preview
+Enable GitHub Pages or open `index.html` locally.
+
+## APIs Used
+| Sport | Endpoint |
+|-------|----------|
+| NBA | `/sports/basketball/nba/scoreboard` |
+| EPL | `/sports/soccer/eng.1/scoreboard` |
+| NFL | `/sports/football/nfl/scoreboard` |
+| NHL | `/sports/hockey/nhl/scoreboard` |
+
+Data source: ESPN public API (unofficial). Not affiliated with ESPN.
 
 ---
-Created as a sample project.
+Created as a sample project for msh007.
